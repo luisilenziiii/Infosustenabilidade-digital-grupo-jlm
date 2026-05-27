@@ -1,167 +1,176 @@
-# Modelo de Dados – Banco de Dados de Coleta e Descarte de Resíduos
+<div align="center">
 
-## Visão Geral
+# 📊 Modelo de Dados – Banco de Dados de Coleta e Descarte de Resíduos
 
-Este banco de dados foi estruturado para armazenar informações relacionadas a pontos de coleta de resíduos, materiais aceitos, procedimentos de descarte, evidências de pesquisa e análises críticas sobre a infraestrutura de descarte em diferentes municípios.
+### ♻️ Estrutura de dados para gerenciamento de pontos de coleta e descarte
 
-A estrutura permite centralizar informações sobre locais de coleta, seus serviços e avaliações sobre acessibilidade e divulgação.
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-green)
+![Banco](https://img.shields.io/badge/Banco-Relacional-blue)
+![Modelo](https://img.shields.io/badge/Modelo-Conceitual-orange)
+![Licença](https://img.shields.io/badge/Licença-MIT-purple)
+
+</div>
 
 ---
 
-# Modelo Conceitual
+## 🌎 Visão Geral
+
+Este banco de dados foi estruturado para armazenar informações relacionadas a **pontos de coleta de resíduos**, materiais aceitos, procedimentos de descarte, evidências de pesquisa e análises críticas.
+
+O objetivo é centralizar informações sobre locais de coleta, serviços disponíveis e avaliações sobre acessibilidade e divulgação.
+
+---
+
+# 🧩 Modelo Conceitual
 
 O sistema possui cinco entidades principais:
 
-- `pontos_coleta`
-- `materiais_aceitos`
-- `procedimentos_descarte`
-- `evidencia`
-- `analise_critica`
+📍 `pontos_coleta`  
+♻️ `materiais_aceitos`  
+📋 `procedimentos_descarte`  
+📎 `evidencia`  
+📈 `analise_critica`
 
-Relacionamento principal:
+### Relacionamentos
 
 ```text
-pontos_coleta
-     |
-     |---< materiais_aceitos
-     |
-     |---< procedimentos_descarte
-     |
-     |---< evidencia
+📍 pontos_coleta
+        |
+        |---< ♻️ materiais_aceitos
+        |
+        |---< 📋 procedimentos_descarte
+        |
+        |---< 📎 evidencia
 
-analise_critica
+📈 analise_critica
 (independente)
 ```
 
 ---
 
-# Estrutura das Tabelas
+# 🗂️ Estrutura das Tabelas
 
-## 1. pontos_coleta
+## 📍 1. pontos_coleta
 
 Tabela principal contendo informações dos locais de descarte.
 
 | Campo | Tipo | Descrição |
-|---|---:|---|
-| ID | Inteiro | Identificador do ponto de coleta |
-| NOME | Texto | Nome do ponto de coleta |
-| ENDEREÇO | Texto | Endereço completo |
-| BAIRRO | Texto | Bairro |
-| CIDADE | Texto | Município |
-| CONTATO | Texto | Telefone ou forma de contato |
-| LINK_MAPS | Texto | Link para localização |
+|:---|:---:|:---|
+| 🆔 ID | Inteiro | Identificador do ponto |
+| 🏢 NOME | Texto | Nome do local |
+| 📍 ENDEREÇO | Texto | Endereço completo |
+| 🏘️ BAIRRO | Texto | Bairro |
+| 🌆 CIDADE | Texto | Município |
+| 📞 CONTATO | Texto | Telefone |
+| 🗺️ LINK_MAPS | Texto | Localização |
 
 ### Exemplo
 
-| ID | NOME | CIDADE |
+| 🆔 ID | 🏢 Nome | 🌆 Cidade |
 |---|---|---|
-| 1 | (PEV)/SAMAE | Blumenau |
+| 1 | PEV/SAMAE | Blumenau |
 
 ---
 
-## 2. materiais_aceitos
+## ♻️ 2. materiais_aceitos
 
-Armazena os tipos de materiais recebidos em cada ponto.
+Armazena os materiais recebidos em cada ponto.
 
 | Campo | Tipo | Descrição |
-|---|---:|---|
-| ID_MATERIAL | Inteiro | Identificador do registro |
-| ID_PONTO | Inteiro | Chave estrangeira para ponto de coleta |
-| TIPO_MATERIAL_ACEITO | Texto | Materiais recebidos |
-| OBSERVAÇÃO | Texto | Observações adicionais |
+|:---|:---:|:---|
+| 🆔 ID_MATERIAL | Inteiro | Identificador |
+| 🔗 ID_PONTO | Inteiro | Chave estrangeira |
+| 🧪 TIPO_MATERIAL_ACEITO | Texto | Material recebido |
+| 📝 OBSERVAÇÃO | Texto | Informações adicionais |
 
 ### Relacionamento
 
 ```text
-ID_PONTO → pontos_coleta.ID
-```
-
-### Cardinalidade
-
-Um ponto de coleta pode aceitar vários materiais:
-
-```text
-1 ponto_coleta ---- N materiais_aceitos
-```
-
----
-
-## 3. procedimentos_descarte
-
-Armazena regras e orientações de descarte.
-
-| Campo | Tipo | Descrição |
-|---|---:|---|
-| ID | Inteiro | Identificador |
-| ID_PONTO | Inteiro | Referência ao ponto |
-| HORÁRIOS | Texto | Horário de funcionamento |
-| AGENDAMENTO | Texto | Necessidade de agendamento |
-| CUSTO | Texto | Informação sobre cobrança |
-| MODALIDADE | Texto | Forma de descarte |
-
-### Relacionamento
-
-```text
-ID_PONTO → pontos_coleta.ID
+🔗 ID_PONTO → pontos_coleta.ID
 ```
 
 ### Cardinalidade
 
 ```text
-1 ponto_coleta ---- N procedimentos_descarte
+1 📍 ponto_coleta ---- N ♻️ materiais_aceitos
 ```
 
 ---
 
-## 4. evidencia
+## 📋 3. procedimentos_descarte
 
-Registra evidências e fontes utilizadas na pesquisa.
+Armazena regras e orientações para descarte.
 
 | Campo | Tipo | Descrição |
-|---|---:|---|
-| ID | Inteiro | Identificador |
-| ID_PONTO | Inteiro | Referência ao ponto |
-| TIPO | Texto | Tipo de evidência |
-| DESCRIÇÃO | Texto | Detalhes da evidência |
-| ARQUIVO/LINK | Texto | Link ou arquivo relacionado |
-| DATA | Data | Data do registro |
+|:---|:---:|:---|
+| 🆔 ID | Inteiro | Identificador |
+| 🔗 ID_PONTO | Inteiro | Referência |
+| 🕒 HORÁRIOS | Texto | Horário funcionamento |
+| 📅 AGENDAMENTO | Texto | Necessidade de agendamento |
+| 💲 CUSTO | Texto | Custos envolvidos |
+| 🚚 MODALIDADE | Texto | Tipo de descarte |
 
 ### Relacionamento
 
 ```text
-ID_PONTO → pontos_coleta.ID
+🔗 ID_PONTO → pontos_coleta.ID
 ```
 
 ### Cardinalidade
 
 ```text
-1 ponto_coleta ---- N evidencias
+1 📍 ponto_coleta ---- N 📋 procedimentos_descarte
 ```
 
 ---
 
-## 5. analise_critica
+## 📎 4. evidencia
+
+Registra evidências e fontes da pesquisa.
+
+| Campo | Tipo | Descrição |
+|:---|:---:|:---|
+| 🆔 ID | Inteiro | Identificador |
+| 🔗 ID_PONTO | Inteiro | Referência |
+| 📂 TIPO | Texto | Tipo de evidência |
+| 📝 DESCRIÇÃO | Texto | Detalhes |
+| 🔗 ARQUIVO/LINK | Texto | Link ou documento |
+| 📅 DATA | Data | Data do registro |
+
+### Relacionamento
+
+```text
+🔗 ID_PONTO → pontos_coleta.ID
+```
+
+### Cardinalidade
+
+```text
+1 📍 ponto_coleta ---- N 📎 evidencia
+```
+
+---
+
+## 📈 5. analise_critica
 
 Tabela destinada à avaliação qualitativa dos municípios.
 
-Essa entidade funciona de forma independente das demais tabelas.
-
 | Campo | Tipo | Descrição |
-|---|---:|---|
-| ID | Inteiro | Identificador |
-| CIDADE | Texto | Município analisado |
-| FACILIDADE | Texto | Pontos positivos encontrados |
-| DIFICULDADE | Texto | Problemas observados |
-| DIVULGAÇÃO | Texto | Situação da divulgação |
-| MELHORIAS | Texto | Sugestões futuras |
+|:---|:---:|:---|
+| 🆔 ID | Inteiro | Identificador |
+| 🌆 CIDADE | Texto | Município |
+| 👍 FACILIDADE | Texto | Pontos positivos |
+| ⚠️ DIFICULDADE | Texto | Problemas encontrados |
+| 📢 DIVULGAÇÃO | Texto | Situação atual |
+| 🚀 MELHORIAS | Texto | Sugestões futuras |
 
 ---
 
-# Modelo Relacional
+# 🧠 Modelo Relacional
 
 ```text
-PONTOS_COLETA
--------------
+📍 PONTOS_COLETA
+-----------------
 ID (PK)
 NOME
 ENDEREÇO
@@ -171,7 +180,7 @@ CONTATO
 LINK_MAPS
 
 
-MATERIAIS_ACEITOS
+♻️ MATERIAIS_ACEITOS
 -----------------
 ID_MATERIAL (PK)
 ID_PONTO (FK)
@@ -179,8 +188,8 @@ TIPO_MATERIAL_ACEITO
 OBSERVAÇÃO
 
 
-PROCEDIMENTOS_DESCARTE
-----------------------
+📋 PROCEDIMENTOS_DESCARTE
+-----------------
 ID (PK)
 ID_PONTO (FK)
 HORÁRIOS
@@ -189,8 +198,8 @@ CUSTO
 MODALIDADE
 
 
-EVIDENCIA
-----------
+📎 EVIDENCIA
+-----------------
 ID (PK)
 ID_PONTO (FK)
 TIPO
@@ -199,8 +208,8 @@ ARQUIVO/LINK
 DATA
 
 
-ANALISE_CRITICA
----------------
+📈 ANALISE_CRITICA
+-----------------
 ID (PK)
 CIDADE
 FACILIDADE
@@ -211,37 +220,52 @@ MELHORIAS
 
 ---
 
-# Regras de Negócio
+# ⚙️ Regras de Negócio
 
-- Cada ponto de coleta pode aceitar vários materiais.
-- Cada ponto de coleta pode possuir múltiplos procedimentos.
-- Cada ponto pode possuir diversas evidências associadas.
-- Análises críticas são independentes e representam avaliações por município.
-- O sistema concentra informações sobre descarte de resíduos eletrônicos e reciclagem.
+✅ Cada ponto de coleta pode aceitar vários materiais  
 
----
+✅ Cada ponto pode possuir múltiplos procedimentos  
 
-# Possíveis Melhorias Futuras
+✅ Cada ponto pode possuir diversas evidências  
 
-Sugestões para normalização e evolução do banco:
+✅ Análises críticas são independentes  
 
-- Criar tabela `cidade`
-- Criar tabela `bairro`
-- Separar materiais em tabela própria
-- Padronizar horários
-- Criar categoria de resíduos
-- Utilizar URLs validadas
-- Inserir geolocalização (latitude/longitude)
-- Implementar status ativo/inativo dos pontos
+✅ O sistema concentra informações sobre descarte e reciclagem
 
 ---
 
-# Tecnologias Indicadas
+# 🚀 Melhorias Futuras
 
-Banco compatível com:
+### Sugestões de evolução:
 
-- MySQL
-- PostgreSQL
-- SQL Server
-- SQLite
+- 🌆 Criar tabela `cidade`
+- 🏘️ Criar tabela `bairro`
+- ♻️ Separar materiais em tabela própria
+- 🕒 Padronizar horários
+- 🧪 Criar categorias de resíduos
+- 🌐 Validar URLs
+- 📍 Inserir latitude/longitude
+- 🔄 Adicionar status ativo/inativo
 
+---
+
+# 💾 Tecnologias Compatíveis
+
+<div align="center">
+
+| Banco |
+|---|
+| 🐬 MySQL |
+| 🐘 PostgreSQL |
+| 🪟 SQL Server |
+| ⚡ SQLite |
+
+</div>
+
+---
+
+<div align="center">
+
+### 💚 Projeto voltado para gestão sustentável e descarte consciente ♻️
+
+</div>
