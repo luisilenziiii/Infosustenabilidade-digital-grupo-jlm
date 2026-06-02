@@ -1,1 +1,151 @@
 
+{
+  "projeto": "InfoSustentabilidade Digital",
+  "cidade_base": "Rio do Sul",
+  "pontos_coleta": [
+    {
+      "id_ponto": 1,
+      "nome_local": "(PEV) / SAMAE",
+      "endereco": "Rua Engenheiro Udo Deeke, nº 430",
+      "bairro": "Salto do Norte",
+      "cidade": "Blumenau",
+      "contato": "telefone 115 ou WhatsApp (47) 99997-6102",
+      "link_maps": "https://maps.app.goo.gl/b75cKDnDcv6w7RqQ8",
+      "materiais_aceitos": [
+        "moveis",
+        "eletrodomesticos",
+        "pilhas",
+        "baterias",
+        "eletronicos"
+      ],
+      "procedimento": {
+        "horario": "08:00-18:00",
+        "precisa_agendamento": false,
+        "possui_custo": false,
+        "modalidade": "entrega voluntaria nos pontos fixos"
+      },
+      "evidencias": [
+        {
+          "tipo": "Pesquisa em site da prefeitura",
+          "arquivo": "https://www.blumenau.sc.gov.br/secretarias/samae"
+        }
+      ]
+    },
+    {
+      "id_ponto": 2,
+      "nome_local": "CIMVI (Consorcio Intermunicipal do Medio Vale do Itajai)",
+      "endereco": "R. Tupiniquim, 1070",
+      "bairro": "Araponguinhas",
+      "cidade": "Apiuna",
+      "contato": "(47) 3380-1345",
+      "link_maps": "CIMVI - Consorcio Intermunicipal do Medio Vale do Itajai",
+      "materiais_aceitos": [
+        "televisores",
+        "computadores",
+        "notebooks",
+        "celulares",
+        "cabos",
+        "equipamentos eletronicos"
+      ],
+      "procedimento": {
+        "horario": "05:00-13:40",
+        "precisa_agendamento": false,
+        "possui_custo": false,
+        "modalidade": "entrega voluntaria nos pontos fixos"
+      },
+      "evidencias": [
+        {
+          "tipo": "Pesquisa da CIMVI",
+          "arquivo": "Coleta de Residuos Apiuna - CIMVI"
+        }
+      ]
+    },
+    {
+      "id_ponto": 3,
+      "nome_local": "Acib Recicla - Rede Cooper Garcia",
+      "endereco": "R. Amazonas, 3000",
+      "bairro": "Garcia",
+      "cidade": "Blumenau",
+      "contato": "(47) 3309-3100",
+      "link_maps": "https://maps.app.goo.gl/XNFXAPDheQNnUdaK7",
+      "materiais_aceitos": [
+        "pilhas",
+        "baterias",
+        "computadores",
+        "monitores",
+        "celulares",
+        "cabos"
+      ],
+      "procedimento": {
+        "horario": "08:00-22:00",
+        "precisa_agendamento": false,
+        "possui_custo": false,
+        "modalidade": "entrega voluntaria nos pontos fixos"
+      },
+      "evidencias": [
+        {
+          "tipo": "Pesquisa em site da Rede Cooper",
+          "arquivo": "https://cooper.coop.br"
+        }
+      ]
+    },
+    {
+      "id_ponto": 4,
+      "nome_local": "Acib Recicla - Rede Cooper Itoupava Norte",
+      "endereco": "R. Dois de Setembro, 3162",
+      "bairro": "Itoupava Norte",
+      "cidade": "Blumenau",
+      "contato": "(47) 3306-8700",
+      "link_maps": "https://maps.app.goo.gl/j5ujwL4cQhjXxVgU8",
+      "materiais_aceitos": [
+        "pilhas",
+        "baterias",
+        "computadores",
+        "monitores",
+        "celulares",
+        "cabos"
+      ],
+      "procedimento": {
+        "horario": "08:00-22:00",
+        "precisa_agendamento": false,
+        "possui_custo": false,
+        "modalidade": "entrega voluntaria nos pontos fixos"
+      },
+      "evidencias": [
+        {
+          "tipo": "Pesquisa em site da Rede Cooper",
+          "arquivo": "https://cooper.coop.br"
+        }
+      ]
+    },
+    {
+      "id_ponto": 5,
+      "nome_local": "Acib Recicla - Rede Cooper Vila Nova",
+      "endereco": "R. Benjamin Constant, 2597",
+      "bairro": "Vila Nova",
+      "cidade": "Blumenau",
+      "contato": "(47) 3309-3700",
+      "link_maps": "https://maps.app.goo.gl/pmgZoqLt7oHH5vRA9",
+      "materiais_aceitos": [
+        "pilhas",
+        "baterias",
+        "computadores",
+        "monitores",
+        "celulares",
+        "cabos"
+      ],
+      "procedimento": {
+        "horario": "08:00-22:00",
+        "precisa_agendamento": false,
+        "possui_custo": false,
+        "modalidade": "entrega voluntaria nos pontos fixos"
+      },
+      "evidencias": [
+        {
+          "tipo": "Pesquisa em site da Rede Cooper",
+          "arquivo": "https://cooper.coop.br"
+        }
+      ]
+    }
+  ]
+}
