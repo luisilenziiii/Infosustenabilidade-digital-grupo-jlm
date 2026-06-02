@@ -2,70 +2,49 @@
 {
   "projeto": "InfoSustentabilidade Digital",
   "cidade_base": "Rio do Sul",
+  "integrantes": [
+    "Jaciara Cristina Moreira Mendes",
+    "Luizi Bertol Lenzi",
+    "Maiara Warmling"
+  ],
   "pontos_coleta": [
     {
       "id_ponto": 1,
-      "nome_local": "(PEV) / SAMAE",
-      "endereco": "Rua Engenheiro Udo Deeke, nº 430",
-      "bairro": "Salto do Norte",
+      "nome": "(PEV)/ SAMAE",
       "cidade": "Blumenau",
-      "contato": "telefone 115 ou WhatsApp (47) 99997-6102",
+      "bairro": "Salto do Norte",
+      "endereco": "Rua Engenheiro Udo Deeke, nº 430",
+      "contato": "telefone 115 ou pelo WhatsApp (47) 99997-6102",
       "link_maps": "https://maps.app.goo.gl/b75cKDnDcv6w7RqQ8",
       "materiais_aceitos": [
-        "moveis",
-        "eletrodomesticos",
+        "móveis",
+        "eletrodomésticos",
         "pilhas",
         "baterias",
-        "eletronicos"
+        "eletroeletrônicos",
+        "televisores",
+        "computadores"
       ],
       "procedimento": {
         "horario": "08:00-18:00",
-        "precisa_agendamento": false,
-        "possui_custo": false,
-        "modalidade": "entrega voluntaria nos pontos fixos"
+        "agendamento": "Não necessita",
+        "custo": "Sem custo",
+        "modalidade": "Entrega voluntária nos pontos fixos"
       },
       "evidencias": [
         {
           "tipo": "Pesquisa em site da prefeitura",
-          "arquivo": "https://www.blumenau.sc.gov.br/secretarias/samae"
+          "descricao": "Informações sobre descarte e contato",
+          "data": "2026-05-03"
         }
       ]
     },
     {
       "id_ponto": 2,
-      "nome_local": "CIMVI (Consorcio Intermunicipal do Medio Vale do Itajai)",
-      "endereco": "R. Tupiniquim, 1070",
-      "bairro": "Araponguinhas",
-      "cidade": "Apiuna",
-      "contato": "(47) 3380-1345",
-      "link_maps": "CIMVI - Consorcio Intermunicipal do Medio Vale do Itajai",
-      "materiais_aceitos": [
-        "televisores",
-        "computadores",
-        "notebooks",
-        "celulares",
-        "cabos",
-        "equipamentos eletronicos"
-      ],
-      "procedimento": {
-        "horario": "05:00-13:40",
-        "precisa_agendamento": false,
-        "possui_custo": false,
-        "modalidade": "entrega voluntaria nos pontos fixos"
-      },
-      "evidencias": [
-        {
-          "tipo": "Pesquisa da CIMVI",
-          "arquivo": "Coleta de Residuos Apiuna - CIMVI"
-        }
-      ]
-    },
-    {
-      "id_ponto": 3,
-      "nome_local": "Acib Recicla - Rede Cooper Garcia",
-      "endereco": "R. Amazonas, 3000",
-      "bairro": "Garcia",
+      "nome": "Acib recicla - Rede Cooper Garcia",
       "cidade": "Blumenau",
+      "bairro": "Garcia",
+      "endereco": "R. Amazonas, 3000 - Garcia, Blumenau - SC",
       "contato": "(47) 3309-3100",
       "link_maps": "https://maps.app.goo.gl/XNFXAPDheQNnUdaK7",
       "materiais_aceitos": [
@@ -74,28 +53,25 @@
         "computadores",
         "monitores",
         "celulares",
-        "cabos"
+        "notebooks",
+        "cabos",
+        "placas",
+        "fios"
       ],
       "procedimento": {
         "horario": "08:00-22:00",
-        "precisa_agendamento": false,
-        "possui_custo": false,
-        "modalidade": "entrega voluntaria nos pontos fixos"
-      },
-      "evidencias": [
-        {
-          "tipo": "Pesquisa em site da Rede Cooper",
-          "arquivo": "https://cooper.coop.br"
-        }
-      ]
+        "agendamento": "Não necessita",
+        "custo": "Sem custo",
+        "modalidade": "Entrega voluntária"
+      }
     },
     {
-      "id_ponto": 4,
-      "nome_local": "Acib Recicla - Rede Cooper Itoupava Norte",
-      "endereco": "R. Dois de Setembro, 3162",
-      "bairro": "Itoupava Norte",
+      "id_ponto": 3,
+      "nome": "Acib recicla - Rede Cooper Itoupava Norte",
       "cidade": "Blumenau",
-      "contato": "(47) 3306-8700",
+      "bairro": "Itoupava Norte",
+      "endereco": "R. Dois de Setembro, 3162",
+      "contato": "(47) 3306 8700",
       "link_maps": "https://maps.app.goo.gl/j5ujwL4cQhjXxVgU8",
       "materiais_aceitos": [
         "pilhas",
@@ -103,27 +79,24 @@
         "computadores",
         "monitores",
         "celulares",
-        "cabos"
+        "notebooks",
+        "cabos",
+        "placas",
+        "fios"
       ],
       "procedimento": {
         "horario": "08:00-22:00",
-        "precisa_agendamento": false,
-        "possui_custo": false,
-        "modalidade": "entrega voluntaria nos pontos fixos"
-      },
-      "evidencias": [
-        {
-          "tipo": "Pesquisa em site da Rede Cooper",
-          "arquivo": "https://cooper.coop.br"
-        }
-      ]
+        "agendamento": "Não necessita",
+        "custo": "Sem custo",
+        "modalidade": "Entrega voluntária"
+      }
     },
     {
-      "id_ponto": 5,
-      "nome_local": "Acib Recicla - Rede Cooper Vila Nova",
-      "endereco": "R. Benjamin Constant, 2597",
-      "bairro": "Vila Nova",
+      "id_ponto": 4,
+      "nome": "Acib recicla - Rede Cooper Vila Nova",
       "cidade": "Blumenau",
+      "bairro": "Vila Nova",
+      "endereco": "R. Benjamin Constant, 2597",
       "contato": "(47) 3309-3700",
       "link_maps": "https://maps.app.goo.gl/pmgZoqLt7oHH5vRA9",
       "materiais_aceitos": [
@@ -132,20 +105,134 @@
         "computadores",
         "monitores",
         "celulares",
-        "cabos"
+        "notebooks",
+        "cabos",
+        "placas",
+        "fios"
       ],
       "procedimento": {
         "horario": "08:00-22:00",
-        "precisa_agendamento": false,
-        "possui_custo": false,
-        "modalidade": "entrega voluntaria nos pontos fixos"
-      },
-      "evidencias": [
-        {
-          "tipo": "Pesquisa em site da Rede Cooper",
-          "arquivo": "https://cooper.coop.br"
-        }
-      ]
+        "agendamento": "Não necessita",
+        "custo": "Sem custo",
+        "modalidade": "Entrega voluntária"
+      }
+    },
+    {
+      "id_ponto": 5,
+      "nome": "CIMVI",
+      "cidade": "Apiuna",
+      "bairro": "Rua Tupiniquim",
+      "endereco": "R. Tupiniquim, 1070 - Araponguinhas",
+      "contato": "(47) 3380-1345",
+      "materiais_aceitos": [
+        "televisores",
+        "computadores",
+        "notebooks",
+        "celulares",
+        "impressoras",
+        "cabos",
+        "pilhas"
+      ],
+      "procedimento": {
+        "horario": "05:00-13:40",
+        "agendamento": "Não necessita",
+        "custo": "Sem custo",
+        "modalidade": "Entrega voluntária"
+      }
+    },
+    {
+      "id_ponto": 6,
+      "nome": "Ecopontos Parceiros do Programa Vale Reciclar",
+      "cidade": "Apiuna",
+      "bairro": "Centro",
+      "endereco": "Av. Quintino Bocaiúva, 204",
+      "contato": "(47) 3353-2000",
+      "materiais_aceitos": [
+        "pilhas",
+        "baterias",
+        "pequenos equipamentos eletrônicos"
+      ],
+      "procedimento": {
+        "horario": "Não informado",
+        "agendamento": "Não necessita",
+        "custo": "Sem custo",
+        "modalidade": "Entrega voluntária pelo consumidor"
+      }
+    },
+    {
+      "id_ponto": 7,
+      "nome": "Prefeitura Municipal de Presidente Getúlio",
+      "cidade": "Presidente Getulio",
+      "bairro": "Centro",
+      "endereco": "Praça Otto Müller, 10",
+      "contato": "(47) 3352-5500",
+      "link_maps": "https://maps.app.goo.gl/muCJhVCmyQBiZ2cS6",
+      "materiais_aceitos": [
+        "computadores",
+        "notebooks",
+        "celulares",
+        "tablets",
+        "carregadores",
+        "pilhas",
+        "baterias",
+        "monitores",
+        "impressoras",
+        "televisores"
+      ],
+      "procedimento": {
+        "horario": "08:00-16:30",
+        "agendamento": "Não necessário",
+        "custo": "Sem custo",
+        "modalidade": "Entrega voluntária"
+      }
+    },
+    {
+      "id_ponto": 8,
+      "nome": "Escola de Educação Básica Cecília Ax",
+      "cidade": "Presidente Getulio",
+      "bairro": "Rio Ferro",
+      "endereco": "R. Abel Ceola, 204",
+      "contato": "(47) 3357-8994",
+      "link_maps": "https://maps.app.goo.gl/QbchNaaxfxY7Wk5b8",
+      "materiais_aceitos": [
+        "computadores",
+        "notebooks",
+        "celulares",
+        "tablets",
+        "carregadores",
+        "pilhas",
+        "baterias",
+        "monitores"
+      ],
+      "procedimento": {
+        "horario": "07:30-22:00",
+        "agendamento": "Apenas durante campanha",
+        "custo": "Sem custo",
+        "modalidade": "Entrega voluntária"
+      }
+    }
+  ],
+  "analise_critica": [
+    {
+      "cidade": "Blumenau",
+      "facilidade": "Descarte gratuito em locais públicos.",
+      "dificuldade": "Pontos concentrados na região central.",
+      "divulgacao": "Necessita maior conscientização.",
+      "melhorias": "Expandir pontos para regiões periféricas."
+    },
+    {
+      "cidade": "Apiuna",
+      "facilidade": "Integração com o CIMVI e mutirões de coleta.",
+      "dificuldade": "Necessidade de ampliar divulgação.",
+      "divulgacao": "Presente em canais oficiais, mas limitada.",
+      "melhorias": "Alertas por aplicativo e ampliação das campanhas."
+    },
+    {
+      "cidade": "Presidente Getulio",
+      "facilidade": "Ecopontos em locais de grande circulação.",
+      "dificuldade": "Poucos pontos e horários restritos.",
+      "divulgacao": "Divulgação em redes sociais e imprensa local.",
+      "melhorias": "Criar novos ecopontos e campanhas permanentes."
     }
   ]
 }
