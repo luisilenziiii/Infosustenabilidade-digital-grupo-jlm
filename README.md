@@ -3,7 +3,7 @@
 ## 👥 Integrantes do Grupo
 
 * **Jaciara Cristina Moreira Mendes**
-* **Luizi Bertol Lenzi**
+* **Luisi Bertol Lenzi**
 * **Maiara Warmling**
 
 ---
@@ -100,12 +100,3 @@ Além de ampliar nossos conhecimentos sobre sustentabilidade, a atividade desenv
 
 O descarte adequado do lixo eletrônico é uma responsabilidade de todos. Conhecer os pontos de coleta, compreender os riscos do descarte incorreto e incentivar outras pessoas a adotarem práticas sustentáveis são passos fundamentais para a construção de uma sociedade mais consciente e comprometida com o futuro do planeta. 🌱♻️
 
----
-
-### 📚 Projeto InfoSustentabilidade 1/2026
-
-🏫 **Turma 33 – Lixo Eletrônico**
-
-👥 **Grupo:** Jaciara Cristina Moreira Mendes • Luizi Bertol Lenzi • Maiara Warmling
-
-💚 **"Transformando informação em ação para um futuro mais sustentável."**
