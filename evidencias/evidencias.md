@@ -121,7 +121,6 @@ Foi executado o script SQL para criação das tabelas e relacionamentos no Supab
 * Encontrar pontos de coleta com informações completas e atualizadas.
 * Verificar se os contatos, endereços e horários encontrados eram realmente válidos.
 * Aprender a estruturar corretamente um arquivo JSON e corrigir erros de validação.
-* Entender como funcionam os relacionamentos entre tabelas utilizando chaves estrangeiras (FOREIGN KEY).
 * Identificar quais dados da planilha deveriam ser inseridos em cada tabela do banco de dados.
 * Organizar o repositório GitHub para que todos os integrantes participassem e contribuíssem com o projeto.
 * Adaptar os dados coletados para os formatos exigidos pelo README, JSON e banco de dados.
@@ -133,7 +132,6 @@ Foi executado o script SQL para criação das tabelas e relacionamentos no Supab
 * Aprendemos a organizar dados em planilhas e transformá-los em estruturas JSON.
 * Compreendemos conceitos básicos de bancos de dados relacionais.
 * Aprendemos a criar tabelas e relacionamentos utilizando SQL no Supabase.
-* Entendemos a importância da documentação de projetos utilizando Markdown.
 * Desenvolvemos habilidades de trabalho em equipe, organização e divisão de tarefas.
 * Aprendemos a utilizar o GitHub para versionamento e compartilhamento de projetos.
 * Percebemos como diferentes ferramentas digitais podem ser integradas para resolver problemas reais.
